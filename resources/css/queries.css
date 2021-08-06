@@ -8,9 +8,16 @@
   .login-form h2 {
     margin-bottom: 0;
   }
-  input[type="text"],
-  input[type="password"] {
+  input[type='text'],
+  input[type='password'],
+  .login-form .btn {
     width: 300px;
+  }
+
+  .alertMsg {
+    max-width: 280px;
+    padding-top: 10px;
+    font-size: 85%;
   }
 }
 
@@ -23,37 +30,20 @@
 
 /* Small screen from 481px to 767px */
 @media only screen and (max-width: 767px) {
-  /* Mobile Nav */
-  /* .btn-mobile-nav {
-    display: block;
-  }
-
-  .main-nav {
-    height: 50vh;
-  }
-
-  .main-nav-list {
-    background-color: rgb(52, 58, 64);
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  } */
-
   .login-form h2,
   .welcome-message h2 {
     font-size: 120%;
   }
-  input[type="text"],
-  input[type="password"] {
+  input[type='text'],
+  input[type='password'],
+  .login-form .btn {
     width: 250px;
   }
   .row {
     padding-top: 15px;
+  }
+  .alertMsg {
+    max-width: 230px;
   }
 }
 
@@ -61,16 +51,20 @@
 @media only screen and (max-width: 480px) {
   .login-form .row,
   .welcome-message h2 {
-    font-size: 100%;
+    font-size: 90%;
   }
 
-  input[type="text"],
-  input[type="password"],
-  input[type="submit"],
-  input[type="button"] {
+  input[type='text'],
+  input[type='password'],
+  .login-form .btn {
     font-size: 85%;
     width: 215px;
     height: 30px;
+  }
+
+  .alertMsg {
+    max-width: 190px;
+    font-size: 75%;
   }
 
   .login-form,

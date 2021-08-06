@@ -5,32 +5,25 @@
   padding: 0;
   /*  overflow: hidden;*/
   color: black;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
   font-size: 16px;
 }
 
 body {
-  background-image: url(/vendors/img/background-1.gif);
+  background-color: #555555;
   background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++ */
 /* NAV BAR ++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++ */
 
-.main-nav-link {
+.nav-item {
   font-size: 105%;
   padding: 0 20px;
   color: #a8a8a8;
   letter-spacing: 1.5px;
-}
-
-.main-nav-list li {
-  list-style: none;
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++ */
@@ -50,6 +43,11 @@ body {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  -o-transition: all 0.7s;
 }
 
 .login-form h2,
@@ -58,8 +56,9 @@ body {
   margin-top: -3px;
 }
 
-input[type="text"],
-input[type="password"] {
+input[type='text'],
+input[type='password'],
+.login-form .btn {
   width: 350px;
 }
 
@@ -80,6 +79,23 @@ input[type="password"] {
   margin-bottom: 0;
 }
 
+.alertMsg {
+  width: 330px;
+  font-size: 90%;
+  margin-left: -10px;
+  padding-top: 20px;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++ */
+/* HIDE ANIMATION +++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++ */
+
 .hidden {
   display: none;
+}
+
+.hideTransition {
+  opacity: 0;
 }

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <meta name="viewport" content="width=device-width, user-scalable=false;" />
+  <meta name="viewport" content="width=device-width" />
 
   <link rel="stylesheet" type="text/css" href="resources/css/styles.css" />
   <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
@@ -35,18 +35,18 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse mr-auto" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#"
+            <a class="nav-link bg1" href="#fishShop"
               >Fish Shop<span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">City Lights</a>
+            <a class="nav-link bg2" href="#cityLights">City Lights</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Soba Place</a>
+            <a class="nav-link bg3" href="#sobaPlace">Soba Place</a>
           </li>
         </ul>
       </div>
@@ -60,25 +60,30 @@
       <div class="row">
         <input
           type="text"
-          class="form-control"
+          class="username form-control"
           title="username"
           placeholder="username"
+          required
         />
       </div>
       <div class="row">
         <input
           type="password"
-          class="form-control"
+          class="password form-control"
           title="password"
           placeholder="password"
+          required
         />
       </div>
       <div class="row">
-        <button type="submit" class="btn btn-primary btn-block">Login</button>
+        <button type="submit" class="btn btn-primary">Login</button>
       </div>
+      <p class="alertMsg hidden text-danger">
+        No accounts match with your credentials. Please try again.
+      </p>
     </form>
   </div>
-  <div class="welcome-message hidden">
+  <div class="welcome-message hidden hideTransition">
     <div class="row">
       <h2>Welcome back, Guest!</h2>
     </div>
@@ -106,4 +111,5 @@
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"
   ></script>
+  <script src="resources/js/script.js"></script>
 </body>
