@@ -1,7 +1,16 @@
 /* Big tablet to 1200px (widths smaller than 1140 row) */
 @media only screen and (max-width: 1200px) {
-  * {
-    font-size: 12px;
+  .login-form h2,
+  .welcome-message h2 {
+    font-size: 140%;
+  }
+
+  .login-form h2 {
+    margin-bottom: 0;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 300px;
   }
 }
 
@@ -14,23 +23,61 @@
 
 /* Small screen from 481px to 767px */
 @media only screen and (max-width: 767px) {
-  .login-form,
-  .welcome-message {
-    font-size: 10px;
+  /* Mobile Nav */
+  /* .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    height: 50vh;
+  }
+
+  .main-nav-list {
+    background-color: rgb(52, 58, 64);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  } */
+
+  .login-form h2,
+  .welcome-message h2 {
+    font-size: 120%;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 250px;
+  }
+  .row {
+    padding-top: 15px;
   }
 }
 
 /* Small screen from 0 to 480px */
 @media only screen and (max-width: 480px) {
-  .login-form,
-  .welcome-message {
-    font-size: 9px;
+  .login-form .row,
+  .welcome-message h2 {
+    font-size: 100%;
   }
-  .row {
-    padding-top: 10px;
+
+  input[type="text"],
+  input[type="password"],
+  input[type="submit"],
+  input[type="button"] {
+    font-size: 85%;
+    width: 215px;
+    height: 30px;
   }
+
   .login-form,
   .welcome-message {
     padding: 10px 35px 15px 35px;
+  }
+  .row {
+    padding-top: 10px;
   }
 }

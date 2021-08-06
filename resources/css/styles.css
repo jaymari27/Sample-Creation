@@ -22,8 +22,15 @@ body {
 /* NAV BAR ++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++ */
 
-.nav-item {
+.main-nav-link {
+  font-size: 105%;
   padding: 0 20px;
+  color: #a8a8a8;
+  letter-spacing: 1.5px;
+}
+
+.main-nav-list li {
+  list-style: none;
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++ */
@@ -47,7 +54,13 @@ body {
 
 .login-form h2,
 .welcome-message h2 {
+  font-size: 150%;
   margin-top: -3px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 350px;
 }
 
 .login-form .btn {
