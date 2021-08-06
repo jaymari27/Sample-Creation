@@ -1,36 +1,36 @@
 /* Big tablet to 1200px (widths smaller than 1140 row) */
 @media only screen and (max-width: 1200px) {
-  .login-form {
-    margin: 60px 400px;
+  * {
+    font-size: 12px;
   }
 }
 
 /* Small screen from 768px to 1023px */
 @media only screen and (max-width: 1023px) {
-  * {
-    font-size: 85%;
-  }
-  .login-form {
-    margin: 60px 300px;
-  }
+  /* * {
+    font-size: 12px;
+  } */
 }
 
 /* Small screen from 481px to 767px */
 @media only screen and (max-width: 767px) {
-  .login-form {
-    margin: 60px 200px;
-  }
-  .login-form h2 {
-    font-size: 20px;
+  .login-form,
+  .welcome-message {
+    font-size: 10px;
   }
 }
 
 /* Small screen from 0 to 480px */
 @media only screen and (max-width: 480px) {
-  * {
-    font-size: 75%;
+  .login-form,
+  .welcome-message {
+    font-size: 9px;
   }
-  .login-form {
-    margin: 60px 100px;
+  .row {
+    padding-top: 10px;
+  }
+  .login-form,
+  .welcome-message {
+    padding: 10px 35px 15px 35px;
   }
 }

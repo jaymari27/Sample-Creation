@@ -26,16 +26,14 @@ body {
   padding: 0 20px;
 }
 
-header .hidden {
-  display: none;
-}
-
 /* ++++++++++++++++++++++++++++++++++++++++ */
 /* LOGIN FORM +++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++ */
 
-.login-form {
-  margin: 60px 700px;
+.login-form,
+.welcome-message {
+  width: fit-content;
+  margin: 60px auto;
   padding: 15px 45px 30px 45px;
   border: 1px solid black;
   border-radius: 10px;
@@ -47,7 +45,8 @@ header .hidden {
   -o-border-radius: 10px;
 }
 
-.login-form h2 {
+.login-form h2,
+.welcome-message h2 {
   margin-top: -3px;
 }
 
@@ -61,4 +60,13 @@ header .hidden {
 
 .row {
   padding-top: 20px;
+}
+
+.welcome-message h2 {
+  padding: 0 20px;
+  margin-bottom: 0;
+}
+
+.hidden {
+  display: none;
 }
