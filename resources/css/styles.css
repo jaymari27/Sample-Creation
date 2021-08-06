@@ -1,0 +1,85 @@
+/*     UNIVERSAL     */
+
+* {
+  margin: 0;
+  padding: 0;
+  /*  overflow: hidden;*/
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  background-image: url(/vendors/img/background-1.gif);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++ */
+/* NAV BAR ++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++ */
+
+.main-nav-link {
+  font-size: 105%;
+  padding: 0 20px;
+  color: #a8a8a8;
+  letter-spacing: 1.5px;
+}
+
+.main-nav-list li {
+  list-style: none;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++ */
+/* LOGIN FORM +++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++ */
+
+.login-form,
+.welcome-message {
+  width: fit-content;
+  margin: 60px auto;
+  padding: 15px 45px 30px 45px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgba(236, 236, 236, 0.945);
+  box-shadow: 0 2px 2px #555555;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.login-form h2,
+.welcome-message h2 {
+  font-size: 150%;
+  margin-top: -3px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 350px;
+}
+
+.login-form .btn {
+  border-radius: 70px;
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  -ms-border-radius: 70px;
+  -o-border-radius: 70px;
+}
+
+.row {
+  padding-top: 20px;
+}
+
+.welcome-message h2 {
+  padding: 0 20px;
+  margin-bottom: 0;
+}
+
+.hidden {
+  display: none;
+}
