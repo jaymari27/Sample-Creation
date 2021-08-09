@@ -69,7 +69,7 @@ body {
 
 input[type='text'],
 input[type='password'],
-.login-form .btn {
+.btnSubmit {
   width: 350px;
 }
 
@@ -89,6 +89,19 @@ input[type='password'],
 .welcome-message h2 {
   padding: 0 20px;
   margin-bottom: 0;
+}
+
+.welcome-message .btnLogout {
+  width: 100%;
+  padding: 6px;
+  color: rgb(233, 233, 233);
+  background-color: #7e7e7e;
+  border-style: none;
+  border-radius: 70px;
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  -ms-border-radius: 70px;
+  -o-border-radius: 70px;
 }
 
 .alertMsg {
