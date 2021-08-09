@@ -40,7 +40,7 @@ submitBtn.addEventListener('click', function (e) {
   currentAccount = myAccounts.find(acc => acc.username === userTxtbox.value);
 
   if (
-    currentAccount.username === userTxtbox.value &&
+    currentAccount?.username === userTxtbox.value &&
     currentAccount.password === passTxtbox.value
   ) {
     formAnimation(welcomeMsg, loginForm);
@@ -50,6 +50,7 @@ submitBtn.addEventListener('click', function (e) {
     // welcomeMsg.replace('Guess', `${currentAccount.firstName}`);
   } else {
     // Show alert message if credentials dont match myAccount
+    alert('TEST');
     alertBox.classList.remove('hidden');
     init();
   }
