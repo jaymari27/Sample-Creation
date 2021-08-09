@@ -1,0 +1,77 @@
+/* Big tablet to 1200px (widths smaller than 1140 row) */
+@media only screen and (max-width: 1200px) {
+  .login-form h2,
+  .welcome-message h2 {
+    font-size: 140%;
+  }
+
+  .login-form h2 {
+    margin-bottom: 0;
+  }
+  input[type='text'],
+  input[type='password'],
+  .login-form .btn {
+    width: 300px;
+  }
+
+  .alertMsg {
+    max-width: 280px;
+    padding-top: 10px;
+    font-size: 85%;
+  }
+}
+
+/* Small screen from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+  /* * {
+    font-size: 12px;
+  } */
+}
+
+/* Small screen from 481px to 767px */
+@media only screen and (max-width: 767px) {
+  .login-form h2,
+  .welcome-message h2 {
+    font-size: 120%;
+  }
+  input[type='text'],
+  input[type='password'],
+  .login-form .btn {
+    width: 250px;
+  }
+  .row {
+    padding-top: 15px;
+  }
+  .alertMsg {
+    max-width: 230px;
+  }
+}
+
+/* Small screen from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  .login-form .row,
+  .welcome-message h2 {
+    font-size: 90%;
+  }
+
+  input[type='text'],
+  input[type='password'],
+  .login-form .btn {
+    font-size: 85%;
+    width: 215px;
+    height: 30px;
+  }
+
+  .alertMsg {
+    max-width: 190px;
+    font-size: 75%;
+  }
+
+  .login-form,
+  .welcome-message {
+    padding: 10px 35px 15px 35px;
+  }
+  .row {
+    padding-top: 10px;
+  }
+}
