@@ -50,7 +50,7 @@ submitBtn.addEventListener('click', function (e) {
     // welcomeMsg.replace('Guess', `${currentAccount.firstName}`);
   } else {
     // Show alert message if credentials dont match myAccount
-    alert('TEST');
+    // alert('TEST');
     alertBox.classList.remove('hidden');
     init();
   }
