@@ -30,7 +30,13 @@ submitBtn.addEventListener('click', function (e) {
     myAccount.password === passTxtbox.value
   ) {
     formAnimation();
-  } else alertBox.classList.remove('hidden');
+  } else {
+    // Show alert message if credentials dont match myAccount
+    alertBox.classList.remove('hidden');
+    // Clear textboxes
+    userTxtbox.value = '';
+    passTxtbox.value = '';
+  }
 });
 
 const formAnimation = function () {
@@ -40,10 +46,3 @@ const formAnimation = function () {
     welcomeMsg.classList.remove('hideTransition');
   }, 1);
 };
-
-const bgChange = () => {
-  bodyContents.style.backgroundImage = `url(/vendors/img/background-${imgNum}.gif)`;
-};
-
-for (let i = 0; i < linkBgChange.length; i++)
-  linkBgChange[i].addEventListener('click', bgChange);
