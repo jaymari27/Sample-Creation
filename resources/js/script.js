@@ -23,6 +23,7 @@ const myAccounts = [account1, account2];
 /* ++++++++++++++++++++++++++++++++++++++++ */
 /* Selection ++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++ */
+
 const submitBtn = document.querySelector('.btn');
 const logoutBtn = document.querySelector('.btnLogout');
 const userTxtbox = document.querySelector('.username');
@@ -45,18 +46,16 @@ submitBtn.addEventListener('click', function (e) {
   ) {
     formAnimation(welcomeMsg, loginForm);
     message.innerHTML = `Welcome back, ${currentAccount.firstName}!`;
-    //   welcomeMsg.insertAdjacentHTML('afterbegin', rowMsg);
-    // welcomeRow.innerHTML.find('h2').replaceWith(`${currentAccount.firstName}`);
-    // welcomeMsg.replace('Guess', `${currentAccount.firstName}`);
   } else {
     // Show alert message if credentials dont match myAccount
-    // alert('TEST');
     alertBox.classList.remove('hidden');
     init();
   }
 });
 
 logoutBtn.addEventListener('click', function () {
+  alertBox.classList.add('hidden');
+
   formAnimation(loginForm, welcomeMsg);
   init();
 });
