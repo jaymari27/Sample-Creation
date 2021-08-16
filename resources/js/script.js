@@ -45,6 +45,8 @@ submitBtn.addEventListener('click', function (e) {
     currentAccount.password === passTxtbox.value
   ) {
     formAnimation(welcomeMsg, loginForm);
+    loginForm.classList.add('hidden');
+
     message.innerHTML = `Welcome back, ${currentAccount.firstName}!`;
   } else {
     // Show alert message if credentials dont match myAccount
@@ -54,19 +56,21 @@ submitBtn.addEventListener('click', function (e) {
 });
 
 logoutBtn.addEventListener('click', function () {
+  formAnimation(loginForm, welcomeMsg);
+  welcomeMsg.classList.add('hidden');
+
   alertBox.classList.add('hidden');
 
-  formAnimation(loginForm, welcomeMsg);
   init();
 });
 
 const formAnimation = function (toDisplay, toHide) {
   toDisplay.classList.remove('hidden');
   setTimeout(function () {
-    toHide.classList.add('hidden');
+    //toHide.classList.add('hidden');
     toDisplay.classList.remove('hideTransition');
     toHide.classList.add('hideTransition');
-  }, 1);
+  }, 20);
 };
 
 const init = function () {
